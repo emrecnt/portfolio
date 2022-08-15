@@ -64,6 +64,18 @@ main {
             margin-top: 20vh;
         }
     }
+  
+}
+#ahover{ /*Index dışı ikonlar */
+    padding: 0.2rem;
+    margin: 0.4rem;}
+#ahover:hover{
+    color: #eece1a;
+        transition: all 0.4s ease-out;
+    
+}/*Buraya kadar*/
+sup{
+    font-size: 1.2rem;
 }
 
 .about-info{
@@ -166,12 +178,18 @@ background: darken($primary-color,50);
 background: lighten($primary-color,50);
 color:#fff;
 }
+
+footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+}
 #main-footer{
     text-align: center;
     padding:1rem;
-    background: darken($primary-color, 10);
+    background: darken(#444, 10);
     color: set-text-color($primary-color);
-    height: 60px;
+    height: 50px;
 }
 
 @import 'mobile';

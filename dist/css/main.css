@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -6,7 +7,7 @@
   cursor: pointer;
   transition: all 0.4s ease-out; }
   .menu-btn .btn-line {
-    width: 28px;
+    width: 31px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
@@ -25,7 +26,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.92;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -41,14 +42,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #3a3a3a;
+    background: #181818;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.4s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: #222222;
     transform: translate3d(0, 100%, 0);
     transition: all 0.4s ease-out; }
     .menu-branding.show {
@@ -95,7 +96,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #444;
+  background-color: #222222;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -113,7 +114,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.4); }
+      background: rgba(34, 34, 34, 0.7); }
 
 h1, h2, h3 {
   margin: 0;
@@ -123,7 +124,7 @@ h1, h2, h3 {
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(74, 74, 74, 0.5); }
+    background: rgba(40, 40, 40, 0.5); }
 
 a {
   color: #fff;
@@ -152,6 +153,19 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
+#ahover {
+  /*Index dışı ikonlar */
+  padding: 0.2rem;
+  margin: 0.4rem; }
+
+#ahover:hover {
+  color: #eece1a;
+  transition: all 0.4s ease-out; }
+
+/*Buraya kadar*/
+sup {
+  font-size: 1.2rem; }
+
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -172,7 +186,7 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #515151;
+    background: #2f2f2f;
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
 
@@ -220,15 +234,20 @@ main {
   background: black; }
 
 .btn-light {
-  background: #c4c4c4;
+  background: #a2a2a2;
   color: #fff; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
   background: #2b2b2b;
   color: #fff;
-  height: 60px; }
+  height: 50px; }
 
 @media screen and (min-width: 1171) {
   .projects {
