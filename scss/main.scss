@@ -52,7 +52,7 @@ main {
         a {
             padding:0.4rem;
             &:hover {
-                color:$secondary-color; // & işareti vu scss ile geliyo. dışta a:hover yazmakla aynı şey. ikonların üzerine gelidğinde sarı yapıyor.
+                color:$secondary-color; 
                 @include easeOut();
             }
         }
@@ -66,14 +66,14 @@ main {
     }
   
 }
-#ahover{ /*Index dışı ikonlar */
+#ahover{ 
     padding: 0.2rem;
     margin: 0.4rem;}
 #ahover:hover{
     color: #eece1a;
         transition: all 0.4s ease-out;
     
-}/*Buraya kadar*/
+}
 sup{
     font-size: 1.2rem;
 }
